@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>RegisterPatientServlet</servlet-name>
+        <servlet-class>com.HospitalManagementSystem.controller.registerPatientServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>loginPatientServlet</servlet-name>
+        <servlet-class>com.HospitalManagementSystem.controller.loginPatientServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BookAppointmentServlet</servlet-name>
+        <servlet-class>com.HospitalManagementSystem.controller.BookAppointmentServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginDoctorServlet</servlet-name>
+        <servlet-class>com.HospitalManagementSystem.controller.LoginDoctorServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddPrescriptionServlet</servlet-name>
+        <servlet-class>com.HospitalManagementSystem.controller.AddPrescriptionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateDoctorServlet</servlet-name>
+         <servlet-class>com.HospitalManagementSystem.controller.UpdateDoctorServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterPatientServlet</servlet-name>
+        <url-pattern>/registerPatientServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>loginPatientServlet</servlet-name>
+        <url-pattern>/loginPatientServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BookAppointmentServlet</servlet-name>
+        <url-pattern>/BookAppointmentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginDoctorServlet</servlet-name>
+        <url-pattern>/LoginDoctorServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddPrescriptionServlet</servlet-name>
+        <url-pattern>/AddPrescriptionServlet</url-pattern>
+    </servlet-mapping>
+    
+<servlet-mapping>
+    <servlet-name>UpdateDoctorServlet</servlet-name>
+    <url-pattern>/UpdateDoctorServlet</url-pattern>
+</servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
